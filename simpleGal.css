@@ -1,0 +1,21 @@
+/*.main-image img, .thumbnail img {
+      max-width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      height: auto;
+      background: #fff;
+      box-shadow: 1px 1px 7px rgba(0,0,0,0.1);
+    }*/
+    .thumbnails  {
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+      /*margin-bottom: 1.5em;*/
+    }
+    .thumbnails li {
+      display: inline;
+    }
+
+    .thumbnails li img{
+      padding: 5px;
+    }
