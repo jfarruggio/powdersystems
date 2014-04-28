@@ -34,7 +34,6 @@
     <link href="css/animate.css" rel="stylesheet" type="text/css">
     <link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
     <link href="css/creative-brands.css" rel="stylesheet" type="text/css">
-    <link href="css/color-switcher.css" rel="stylesheet" type="text/css">
     <link href="css/color.css" rel="stylesheet" type="text/css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
     
@@ -99,7 +98,7 @@
             		
                 <div class="col-sm-7">
                 <h2>Leave a message</h2>
-                    <form role="form">
+                    <!-- <form role="form">
                         <div class="form-group">
                             <input type="text" class="form-control" id="name" placeholder="Your name" required>
                         </div>
@@ -115,7 +114,40 @@
                         
                         <button type="submit" class="btn btn-normal">Send Message</button>   
                         
-                    </form>
+                    </form> -->
+
+                    <form method="post" action="emailform.php">
+                            <div class="row form-group margin-bottom-20">
+                                <div class="col-md-6 col-md-offset-0">
+                                    <input type="text" required name="first_name"placeholder="First Name*" class="form-control">
+                                </div>
+                                <br class="visible-xs visible-sm">
+                                <div class="col-md-6 col-md-offset-0">
+                                    <input type="text" name="last_name" placeholder="Last Name" class="form-control">
+                                </div>                
+                            </div>
+                            <div class="row form-group margin-bottom-20">
+                                <div class="col-md-6 col-md-offset-0">
+                                    <input type="text" name="company_name" placeholder="Company Name" class="form-control">
+                                </div>   
+                                <br class="visible-xs visible-sm">
+                                 <div class="col-md-6 col-md-offset-0">
+                                    <input type="email" required name="email" placeholder="Email*" class="form-control">
+                                </div>               
+                            </div>
+                            <div class="row form-group margin-bottom-20">
+                                <div class="col-md-6 col-md-offset-0">
+                                    <input type="tel" required name="telephone" placeholder="Phone Number*" class="form-control">
+                                </div>                
+                            </div>
+                            <div class="row  form-group margin-bottom-20">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <textarea rows="8" required name="comments" placeholder="Message*" class="form-control"></textarea>
+                                </div>                
+                            </div>
+                            
+                            <p><button type="submit" value="submit" class="btn btn-normal">Send Message</button></p>
+                        </form>
                 </div>
                 <div class="col-sm-5">
                     <h2>Contacts</h2>
