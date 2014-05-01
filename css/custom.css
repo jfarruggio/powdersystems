@@ -366,8 +366,15 @@ body .overlay-wrapper .overlay a:hover {
 	JUMBOTRON
 ------------------------------*/
 
-.jumbotron {
-	background:url(../image/powder_fade.png) repeat;
+.jumbotron-lg {
+	background:url(../image/powder_fade.png) no-repeat;
+	padding:50px 0px;
+	min-height:400px;
+	background-size: cover;
+}
+
+.jumbotron-sm {
+	background:url(../image/pattern.png) repeat;
 	padding:50px 0px;
 	min-height:400px;
 }
