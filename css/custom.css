@@ -4,7 +4,9 @@
  *
  * Supreme theme v1.0
 ------------------------------*/
-
+.top-bar {
+	position: absolute;
+}
 .logo {
 	width: 400px;
 	margin-top: 15px;
@@ -872,14 +874,14 @@ body a.jcarousel-control-next:hover {
 	text-decoration:underline;
 }
 
-#footer ul {
+/*#footer ul {
 	float:right;
-}
+}*/
 
-#footer ul li a {
+/*#footer ul li a {
 	background-color:#444444;
 	color:#F0F0F0;
-}
+}*/
 
 /*------------------------------
 	SIGN IN & SIGN UP
@@ -1348,6 +1350,10 @@ ul.blog-tags li i {
 ------------------------------*/
 
 @media (min-width:992px) and (max-width:1199px) {
+	.logo {
+		width:288px;
+	}
+
 	.jumbotron h2 {
 		font-size:30px;
 	}
@@ -1389,7 +1395,7 @@ ul.blog-tags li i {
 	}
 
 	.container>.navbar-header {
-		margin-left: 180px;
+		margin-left: 10px;
 	}
 
 	.container>.navbar-collapse {
