@@ -76,12 +76,25 @@ $(document).ready(function() {
 	
 	var map;
 	function initialize() {
-	  var mapOptions = {zoom: 17,center: new google.maps.LatLng(43.175365,-89.219985)};
-	  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+	var myLatlng = new google.maps.LatLng(43.175365,-89.219985);
+  	var mapOptions = {
+    zoom: 15,
+    center: myLatlng
+	  }
+	  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+	  var marker = new google.maps.Marker({
+	      position: myLatlng,
+	      map: map,
+	      
+	  });
 	}
 	
 	google.maps.event.addDomListener(window, 'load', initialize);
+
 });
+
+
 
 
 
